@@ -1,0 +1,167 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+.short-button {
+	padding: 2px 30px 2px 30px;
+	font-size:12pt;
+	background-color: white;
+	color:$primary-color;
+	border: 1px solid red;
+}
+
+.active-button{	
+	background-color: $primary-color;
+	color:white
+}
+
+
+
+$text-color: #fff;
+
+// footer CSS
+
+.footer {
+	margin-top:15px;
+	background-color: $primary-color;
+	padding: 2rem 4rem;
+	text-align: center;
+	color: $text-color;
+	i {
+		font-size: 100px;
+	}
+}
+.small-footer {
+	margin-top:15px;
+	background-color: $primary-color;
+	color: $text-color;
+}
+
+.no-padding{padding:0px;}
+
+.footer {
+  h4 {
+    color: $text-color;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top:5px;
+  }
+  p, a {
+    font-weight: 300; 
+    font-size: 1em;
+    color: $text-color;
+  } 
+
+  p {
+    font-size: 0.8em;
+    margin:0px;
+  }
+}
+
+.copyright{
+
+	background-color: rgb(221, 203,202);
+
+	padding-top:10px;
+	padding-bottom:0px;
+	color: $primary-color;
+	margin-bottom:0px;
+
+}
+
+@media only screen and (min-width: 40.063em) {
+.footer {
+  .columns:nth-child(n+2) {
+    border-left: 1px dashed scale-color($text-color, $lightness: 100%);
+  }
+ }
+}
+
+.footer-links {
+  list-style-type: none;
+  li {
+    margin-top: .5em;
+  }
+}
+
+//*******menu***********/
+
+.menu-blank-space{
+	background-color: white;
+	padding-left: 30px;
+}
+
+.menu-right-divider{
+	color:$primary-color;
+	padding-top:10px;
+	margin:0px;
+}
+.p-no-margin p{
+	margin:0px;
+}
+.p-no-margin li{
+	padding:4px;
+}
+.menu-drop-margin{margin-left:-20px}
+
+.home-mobile-ul li{
+	padding:3px;
+	border-radius: 2em 1em 4em / 0.5em 3em;
+}
+
+.ul-drop-padding a{margin-left:20px;}
+
+//*********articles*************/
+
+.article p {font-size:rem-calc(14);}
+
+.article hr{border: 1px dashed $primary-color}
+
+.article a{color:scale-color($primary-color, $lightness: 50%)}
+
+.article a:hover{color:$primary-color}
+
+.article .active a{color:$primary-color;font-weight: bold}
+
+.article h4{font-weight: 700}
+
+.article .red-i{font-style: italic; color:red;font-size:rem-calc(16);}
