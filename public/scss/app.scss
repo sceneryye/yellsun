@@ -150,6 +150,18 @@ $text-color: #fff;
 
 .ul-drop-padding a{margin-left:20px;}
 
+// ************obrit slider***********//
+
+.orbit-timer {
+left: -10000px;
+top: auto;
+height: 1px;
+overflow: hidden;
+position: absolute;
+width: 1px;
+}
+
+
 //*********articles*************/
 
 .article p {font-size:rem-calc(14);}

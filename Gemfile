@@ -36,7 +36,7 @@ gem  'sitemap_generator'
 
 gem 'jquery-rails',  '~> 2.1.4'
 gem 'jquery-ui-rails',  '~> 2.0.2'
-gem 'bootstrap-sass'
+
 
 gem 'rmagick','~> 2.13.1'
 

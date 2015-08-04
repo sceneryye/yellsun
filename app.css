@@ -9567,15 +9567,3 @@ th.hide-for-touch {
   color: red;
   font-size: 1rem;
 }
-
-/*********obrit slider*********/
-
-.orbit-timer {
-left: -10000px;
-top: auto;
-height: 1px;
-overflow: hidden;
-position: absolute;
-width: 1px;
-}
-
