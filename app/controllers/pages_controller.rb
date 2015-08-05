@@ -35,7 +35,7 @@ class PagesController < ApplicationController
     #   @supplier = Ecstore::Supplier.find(supplier_id)
     #    return render :layout=>@supplier.layout
     # else
-      render :layout=> 'yellsun'#@page.layout.present? ? @page.layout : nil
+      render :layout=> @page.layout.present? ? @page.layout : nil
     # end
 
 	end

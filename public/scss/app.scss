@@ -39,6 +39,13 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+$brightred: rgb(198, 26, 37);
+$backgroundgray: #FFF;
+$background_from: rgb(244, 245, 245);
+$background_to: rgb(253, 254, 254);
+$lightgray: rgb(221,221,221);
+
+
 .short-button {
 	padding: 2px 30px 2px 30px;
 	font-size:12pt;
@@ -109,11 +116,11 @@ $text-color: #fff;
 }
 
 @media only screen and (min-width: 40.063em) {
-.footer {
-  .columns:nth-child(n+2) {
-    border-left: 1px dashed scale-color($text-color, $lightness: 100%);
+  .footer {
+    .columns:nth-child(n+2) {
+      border-left: 1px dashed scale-color($text-color, $lightness: 100%);
+    }
   }
- }
 }
 
 .footer-links {
@@ -150,19 +157,43 @@ $text-color: #fff;
 
 .ul-drop-padding a{margin-left:20px;}
 
-// ************obrit slider***********//
+// ************orbit slider***********//
 
 .orbit-timer {
-left: -10000px;
-top: auto;
-height: 1px;
-overflow: hidden;
-position: absolute;
-width: 1px;
+  left: -10000px;
+  top: auto;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
 }
 
+/**********secondary pages layouts**********/
 
-//*********articles*************/
+.panel {
+  padding-left: 0;
+  padding-right: 0;
+}
+.columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+.artilce-icon-bar {
+  .item-1 {
+    margin-left: 0;
+
+  }
+  .item-4 {
+    margin-right: 0;
+  }
+  border-bottom: 1px dashed $brightred;
+  .item {
+    padding: 16px 0;
+
+  }
+}
+
+/*********articles*************/
 
 .article p {font-size:rem-calc(14);}
 
@@ -176,4 +207,62 @@ width: 1px;
 
 .article h4{font-weight: 700}
 
-.article .red-i{font-style: italic; color:red;font-size:rem-calc(16);}
+.article .red-i{font-style: italic; color:red;font-size:rem-calc(16); text-align: center;}
+
+/*********gsgs************/
+
+.gsgs-content {
+  p {
+    text-indent: 2rem;
+  }
+}
+
+/***********gswh************/
+
+.gswh-content{
+  .row {
+    margin-left: 0;
+    margin-right: 0;  
+  }
+  .text-picture {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .text {
+    position: absolute;
+    bottom: 0;
+  }.text-2 {
+    right: 0;
+    padding-left: 10px;
+  }
+
+}
+
+/*****shzr*******/
+
+.shzr-spaq .text {
+  padding-left: 30px;
+  p {
+    text-indent: 2rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+  }
+}
+
+.shzr-bzsy {
+  .row {
+    margin: 0;
+  }
+  .text {
+    padding-left: 30px;
+  }
+}
+
+/***********lxwm***********/
+
+.lxwm {
+  .star {
+    color: $brightred;
+  }
+}
