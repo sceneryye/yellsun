@@ -24,7 +24,7 @@ module Admin::SessionsHelper
 	end
 
 	def after_admin_sign_in_path
-		admin_goods_path
+		admin_static_pages_path
 	end
 
 	# alias :current_user :current_admin

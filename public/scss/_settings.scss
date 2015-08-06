@@ -926,8 +926,8 @@ $include-html-global-classes: $include-html-classes;
 // $orbit-nav-arrow-color-hover: $white;
 
 // We use these to control the timer styles
-// $orbit-timer-bg: rgba(255,255,255,0.3);
- $orbit-timer-show-progress-bar: false;
+//$orbit-timer-bg: rgba(255,255,255,0);
+//$orbit-timer-show-progress-bar: false !default;
 
 // We use these to control the bullet nav styles
 // $orbit-bullet-nav-color: $iron;

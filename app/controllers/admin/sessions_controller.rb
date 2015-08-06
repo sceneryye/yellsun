@@ -3,8 +3,9 @@ class Admin::SessionsController < Admin::BaseController
   skip_before_filter :authorize_admin!, :except=>[:destroy]
 
   def new
-  	redirect_to after_admin_sign_in_path if admin_signed_in?
+  	redirect_to admin_static_pages_path if admin_signed_in?
   end
+
 
   def create
   	name  = params[:session][:login_name]
