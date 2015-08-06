@@ -14,9 +14,9 @@
     <%= render 'shared/header_yellsun' %>
     
     <div class="row">
-      <div class="columns small-12 panel">
+      <div class="columns small-12">
 
-        <%= render 'shared/shzr' %>
+        <%= render 'shared/xwdt' %>
         
         <%= yield %>
       </div>
@@ -35,15 +35,16 @@
         var path_name = window.location.pathname;
         var $link_word = $('.no-padding a');
         $link_word.css({opacity: 0.3});
-        switch (<%= @page.id %>) {
-          case 70:
-          $('.no-padding #spaq').css({opacity: 1});
+
+        switch (path_name) {
+          case '/pages/xinwendongtai':
+          $('.no-padding #xwdt').css({opacity: 1});
           break;
-          case 69:
-          $('.no-padding #bzsy').css({opacity: 1});
+          case '/pages/zuixinxinxi':
+          $('.no-padding #zxxx').css({opacity: 1});
           break;
-          case '/pages/huikuisehui':
-          $('.no-padding #hksh').css({opacity: 1});
+          case '/pages/cuxiaohuodong':
+          $('.no-padding #cxhd').css({opacity: 1});
           break;
         };
       });

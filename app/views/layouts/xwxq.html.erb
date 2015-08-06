@@ -9,14 +9,14 @@
   <link type="text/css" rel="stylesheet" href="/stylesheets/marketing.cssu"/>
   <link href="/stylesheets/foundation-icons.css" rel="stylesheet"></head>
   <body>
-    <%= render 'shared/logo' %>
+  <%= render 'shared/logo' %>
     <!--PC页面菜单-->
     <%= render 'shared/header_yellsun' %>
     
     <div class="row">
       <div class="columns small-12 panel">
-
-        <%= render 'shared/shzr' %>
+        
+          <%= render 'shared/xwxq' %>
         
         <%= yield %>
       </div>
@@ -29,24 +29,5 @@
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/js/app.js"></script>
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-        var path_name = window.location.pathname;
-        var $link_word = $('.no-padding a');
-        $link_word.css({opacity: 0.3});
-        switch (<%= @page.id %>) {
-          case 70:
-          $('.no-padding #spaq').css({opacity: 1});
-          break;
-          case 69:
-          $('.no-padding #bzsy').css({opacity: 1});
-          break;
-          case '/pages/huikuisehui':
-          $('.no-padding #hksh').css({opacity: 1});
-          break;
-        };
-      });
-    </script>
   </body>
   </html>

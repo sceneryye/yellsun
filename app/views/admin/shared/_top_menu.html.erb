@@ -13,7 +13,7 @@
         <div class="nav-collapse collapse">
           <ul class="nav">
            
-            <%if current_admin.has_right_of("topics","index") || current_admin.has_right_of("articles","index")%>
+          <!--  <%if current_admin.has_right_of("topics","index") || current_admin.has_right_of("articles","index")%>
                <li class="<%='active' if %w(topics articles).include?(controller_name)%>">
                     <%=link_to admin_topics_path,:class=>"dropdown-toggle" do %>
                       专题 <b class="caret" style="border-top-color: #fff;border-bottom-color: #fff; margin-top:7px;margin-left:2px;"></b>
@@ -27,7 +27,7 @@
                       </li>
                     </ul>
                </li>
-            <%end%>
+            <%end%>  -->
 
 
             <%if current_admin.has_right_of("events","index")%>

@@ -1,0 +1,74 @@
+
+
+<div class="columns medium-10 medium-centered small-12">
+  <div class="columns large-7 large-centered medium-10 medium-centered small-12 artilce-icon-bar">
+    <ul class="small-block-grid-3 text-center p-no-margin" style="padding:0px">
+      <li class="no-padding">
+        <img src="/img/news_dynamic_icon.png" />
+      </li>
+      <li class="no-padding">
+        <img src="/img/news_info_icon.png" />
+      </li>
+      <li class="no-padding">
+        <img src="/img/news_activity_icon.png" />
+      </li>
+      <li class="no-padding">
+        <a class="active word" id="xwdt" href="/pages/xinwendongtai">新闻动态</a>
+      </li>
+      <li class="no-padding">
+        <a class="word" id="zxxx" href="/pages/zuixinxinxi">最新信息</a>
+      </li>
+      <li class="no-padding">
+        <a class="word" id="cxhd" href="/pages/cuxiaohuodong">促销活动</a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<!- 静态的数据列表 ->
+<% @articles = [["习近平会见斐济总理姆拜尼马拉马", "国家主席习近平15日在人民大会堂会见", "2015-4-10"],
+["李克强主持召开国务院常务会议", "国务院总理李克强15日主持召开国务院常务会议", "2015-5-4"],
+["父亲走的时候很平静 没有什么痛苦", "父亲留下宝贵的精神财产", "2015-5-5"],
+["国家体育总局副局长肖天被免职", "中国经济网北京7月16日综合报道（尹彦宏）近日", "2015-5-7"],
+["男孩酒店电梯内剔牙遭美籍华人女士打手", "2015年7月15日，福建泉州一豪华酒店监控显", "2015-5-8"],
+["汪峰称受到侮辱诽谤诉娱记索赔400万", "因被指涉赌、认为名誉受损，4月底汪峰提起两起", "2015-5-9"],
+["京津冀3地功能定位调整都为级城市群", "京津冀协同发展之构建有机共同体", "2015-5-11"],
+["跑步看见结果，慢走享受过程", "嗯，想必我不说大家也都知道了，但是我要跟广大", "2015-5-12"],
+["最美的誓言是谎言，最好的思念是不见", "其实，若按历史上流行的一种说法，太阳系", "2015-5-13"]] %>
+
+<ul class="columns large-8 large-centered medium-11 medium-centered show-for-medium-up xwdt">
+  <% 10.times do %>
+  <% @articles.each_with_index do |article, index| %>
+  <% address = "#" %>
+  <% address = ("/pages/xinwenxiangqing") if index == 1 %>  
+  <li>
+    <img class="red_point" src="/img/red_point2.png">
+    <span class="title"><a href=<%= address %>><%= article[0] %></a></span>
+    <span class="subtitle"><%= article[1] %></span>
+    <span class="time"><%= article[2] %></span>
+  </li>
+  <% end %>
+  <% end %>
+</ul>
+
+<ul class="columns small-12 show-for-small-only xwdt-small">
+  <% 10.times do %>
+  <% @articles.each do |article| %>
+  <li>
+    <img class="red_point" src="/img/red_point2.png">
+    <span class="title"><a href="#"><%= article[0] %></a></span>
+    
+    <span class="time"><%= article[2] %></span>
+  </li>
+  <% end %>
+  <% end %>
+</ul>
+
+
+
+
+
+
+
+

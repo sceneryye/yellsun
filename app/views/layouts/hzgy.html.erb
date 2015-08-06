@@ -9,14 +9,14 @@
   <link type="text/css" rel="stylesheet" href="/stylesheets/marketing.cssu"/>
   <link href="/stylesheets/foundation-icons.css" rel="stylesheet"></head>
   <body>
-    <%= render 'shared/logo' %>
+  <%= render 'shared/logo' %>
     <!--PC页面菜单-->
     <%= render 'shared/header_yellsun' %>
     
     <div class="row">
       <div class="columns small-12 panel">
-
-        <%= render 'shared/shzr' %>
+        
+          <%= render 'shared/hzgy' %>
         
         <%= yield %>
       </div>
@@ -36,14 +36,14 @@
         var $link_word = $('.no-padding a');
         $link_word.css({opacity: 0.3});
         switch (<%= @page.id %>) {
-          case 70:
-          $('.no-padding #spaq').css({opacity: 1});
+          case '/pages/zhengceqingxiang':
+          $('.no-padding #zcqx').css({opacity: 1});
           break;
-          case 69:
-          $('.no-padding #bzsy').css({opacity: 1});
+          case '/pages/hezuohuoban':
+          $('.no-padding #hzhb').css({opacity: 1});
           break;
-          case '/pages/huikuisehui':
-          $('.no-padding #hksh').css({opacity: 1});
+          case 71:
+          $('.no-padding #hwys').css({opacity: 1});
           break;
         };
       });

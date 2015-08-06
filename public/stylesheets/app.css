@@ -5359,6 +5359,16 @@ kbd {
   width: 100px;
   z-index: 10;
 }
+/* line 209, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
+.orbit-container .orbit-timer .orbit-progress {
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  width: 0;
+  position: relative;
+  right: 20px;
+  top: 5px;
+}
 /* line 223, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-timer > span {
   border: solid 4px #FFFFFF;
@@ -9406,7 +9416,7 @@ th.hide-for-touch {
     display: none !important;
   }
 }
-/* line 49, ../scss/app.scss */
+/* line 50, ../scss/app.scss */
 .short-button {
   padding: 2px 30px 2px 30px;
   font-size: 12pt;
@@ -9415,13 +9425,13 @@ th.hide-for-touch {
   border: 1px solid red;
 }
 
-/* line 57, ../scss/app.scss */
+/* line 58, ../scss/app.scss */
 .active-button {
   background-color: #C8161D;
   color: white;
 }
 
-/* line 68, ../scss/app.scss */
+/* line 69, ../scss/app.scss */
 .footer {
   margin-top: 15px;
   background-color: #C8161D;
@@ -9429,24 +9439,24 @@ th.hide-for-touch {
   text-align: center;
   color: #fff;
 }
-/* line 74, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 .footer i {
   font-size: 100px;
 }
 
-/* line 78, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .small-footer {
   margin-top: 15px;
   background-color: #C8161D;
   color: #fff;
 }
 
-/* line 84, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .no-padding {
   padding: 0px;
 }
 
-/* line 87, ../scss/app.scss */
+/* line 88, ../scss/app.scss */
 .footer h4 {
   color: #fff;
   font-size: 1em;
@@ -9455,19 +9465,19 @@ th.hide-for-touch {
   margin-bottom: 0px;
   margin-top: 5px;
 }
-/* line 95, ../scss/app.scss */
+/* line 96, ../scss/app.scss */
 .footer p, .footer a {
   font-weight: 300;
   font-size: 1em;
   color: #fff;
 }
-/* line 101, ../scss/app.scss */
+/* line 102, ../scss/app.scss */
 .footer p {
   font-size: 0.8em;
   margin: 0px;
 }
 
-/* line 107, ../scss/app.scss */
+/* line 108, ../scss/app.scss */
 .copyright {
   background-color: #ddcbca;
   padding-top: 10px;
@@ -9477,60 +9487,60 @@ th.hide-for-touch {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 120, ../scss/app.scss */
+  /* line 121, ../scss/app.scss */
   .footer .columns:nth-child(n+2) {
     border-left: 1px dashed white;
   }
 }
-/* line 126, ../scss/app.scss */
+/* line 127, ../scss/app.scss */
 .footer-links {
   list-style-type: none;
 }
-/* line 128, ../scss/app.scss */
+/* line 129, ../scss/app.scss */
 .footer-links li {
   margin-top: .5em;
 }
 
-/* line 135, ../scss/app.scss */
+/* line 136, ../scss/app.scss */
 .menu-blank-space {
   background-color: white;
   padding-left: 30px;
 }
 
-/* line 140, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 .menu-right-divider {
   color: #C8161D;
   padding-top: 10px;
   margin: 0px;
 }
 
-/* line 145, ../scss/app.scss */
+/* line 146, ../scss/app.scss */
 .p-no-margin p {
   margin: 0px;
 }
 
-/* line 148, ../scss/app.scss */
+/* line 149, ../scss/app.scss */
 .p-no-margin li {
   padding: 4px;
 }
 
-/* line 151, ../scss/app.scss */
+/* line 152, ../scss/app.scss */
 .menu-drop-margin {
   margin-left: -20px;
 }
 
-/* line 153, ../scss/app.scss */
+/* line 154, ../scss/app.scss */
 .home-mobile-ul li {
   padding: 3px;
   border-radius: 2em 1em 4em / 0.5em 3em;
 }
 
-/* line 158, ../scss/app.scss */
+/* line 159, ../scss/app.scss */
 .ul-drop-padding a {
   margin-left: 20px;
 }
 
-/* line 162, ../scss/app.scss */
+/* line 166, ../scss/app.scss */
 .orbit-timer {
   left: -10000px;
   top: auto;
@@ -9541,68 +9551,78 @@ th.hide-for-touch {
 }
 
 /**********secondary pages layouts**********/
-/* line 173, ../scss/app.scss */
+/* line 181, ../scss/app.scss */
 .panel {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 177, ../scss/app.scss */
-.columns {
+/* line 185, ../scss/app.scss */
+.columns-gsgs {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 181, ../scss/app.scss */
+/* line 189, ../scss/app.scss */
 .artilce-icon-bar {
   border-bottom: 1px dashed #c61a25;
+  padding-bottom: 20px;
 }
-/* line 182, ../scss/app.scss */
+/* line 190, ../scss/app.scss */
 .artilce-icon-bar .item-1 {
   margin-left: 0;
 }
-/* line 186, ../scss/app.scss */
+/* line 194, ../scss/app.scss */
 .artilce-icon-bar .item-4 {
   margin-right: 0;
 }
-/* line 190, ../scss/app.scss */
+/* line 199, ../scss/app.scss */
 .artilce-icon-bar .item {
   padding: 16px 0;
 }
 
+/* line 205, ../scss/app.scss */
+.article-show h4 {
+  color: #c61a25;
+  padding-top: 20px;
+  background: no-repeat left bottom url(/img/arrow_dashed.png);
+  padding-bottom: 10px;
+  background-size: 100%;
+}
+
 /*********articles*************/
-/* line 198, ../scss/app.scss */
+/* line 217, ../scss/app.scss */
 .article p {
   font-size: 0.875rem;
 }
 
-/* line 200, ../scss/app.scss */
+/* line 219, ../scss/app.scss */
 .article hr {
   border: 1px dashed #C8161D;
 }
 
-/* line 202, ../scss/app.scss */
+/* line 221, ../scss/app.scss */
 .article a {
   color: #f17d82;
 }
 
-/* line 204, ../scss/app.scss */
+/* line 223, ../scss/app.scss */
 .article a:hover {
   color: #C8161D;
 }
 
-/* line 206, ../scss/app.scss */
+/* line 225, ../scss/app.scss */
 .article .active a {
   color: #C8161D;
   font-weight: bold;
 }
 
-/* line 208, ../scss/app.scss */
+/* line 227, ../scss/app.scss */
 .article h4 {
   font-weight: 700;
 }
 
-/* line 210, ../scss/app.scss */
+/* line 229, ../scss/app.scss */
 .article .red-i {
   font-style: italic;
   color: red;
@@ -9611,57 +9631,211 @@ th.hide-for-touch {
 }
 
 /*********gsgs************/
-/* line 215, ../scss/app.scss */
+/* line 234, ../scss/app.scss */
 .gsgs-content p {
   text-indent: 2rem;
 }
 
 /***********gswh************/
-/* line 223, ../scss/app.scss */
+/* line 242, ../scss/app.scss */
 .gswh-content .row {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 227, ../scss/app.scss */
+/* line 246, ../scss/app.scss */
 .gswh-content .text-picture {
   margin-bottom: 20px;
   position: relative;
 }
-/* line 231, ../scss/app.scss */
+/* line 250, ../scss/app.scss */
 .gswh-content .text {
   position: absolute;
   bottom: 0;
 }
-/* line 234, ../scss/app.scss */
+/* line 253, ../scss/app.scss */
 .gswh-content .text-2 {
   right: 0;
   padding-left: 10px;
 }
 
 /*****shzr*******/
-/* line 243, ../scss/app.scss */
+/* line 262, ../scss/app.scss */
 .shzr-spaq .text {
   padding-left: 30px;
 }
-/* line 245, ../scss/app.scss */
+/* line 264, ../scss/app.scss */
 .shzr-spaq .text p {
   text-indent: 2rem;
   margin: 0;
   padding: 0;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
-/* line 254, ../scss/app.scss */
+/* line 273, ../scss/app.scss */
 .shzr-bzsy .row {
   margin: 0;
 }
-/* line 257, ../scss/app.scss */
+/* line 276, ../scss/app.scss */
 .shzr-bzsy .text {
   padding-left: 30px;
 }
 
 /***********lxwm***********/
-/* line 265, ../scss/app.scss */
+/* line 284, ../scss/app.scss */
 .lxwm .star {
   color: #c61a25;
+  padding-right: 5px;
+}
+
+/* line 290, ../scss/app.scss */
+.lxwm-forms {
+  padding: 0 20%;
+}
+
+/* line 293, ../scss/app.scss */
+.lxwm-button {
+  color: white;
+  background-color: #c61a25;
+  padding: 5px 30px;
+  text-align: center;
+  margin-left: 23%;
+}
+
+/* line 301, ../scss/app.scss */
+.anytime {
+  color: #c61a25;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/**********hzgy**********/
+/* line 313, ../scss/app.scss */
+.hzgy-hwys img {
+  text-align: center;
+}
+/* line 316, ../scss/app.scss */
+.hzgy-hwys .text {
+  text-align: left;
+  text-indent: 2rem;
+  margin-top: 20px;
+}
+/* line 320, ../scss/app.scss */
+.hzgy-hwys .text p {
+  margin-bottom: 0;
+  line-height: 2rem;
+}
+
+/**********xwdt************/
+/* line 328, ../scss/app.scss */
+.xwdt {
+  margin-left: 0;
+  height: 700px;
+  overflow: scroll;
+  margin-top: 20px;
+  list-style: none;
+}
+/* line 334, ../scss/app.scss */
+.xwdt li {
+  position: relative;
+  background-color: #dddddd;
+  margin-bottom: 10px;
+}
+/* line 338, ../scss/app.scss */
+.xwdt li img {
+  padding-left: 20px;
+  width: 30px;
+}
+/* line 343, ../scss/app.scss */
+.xwdt li .title {
+  padding-right: 5%;
+}
+/* line 345, ../scss/app.scss */
+.xwdt li .title a {
+  font-weight: bold;
+  color: black;
+}
+/* line 350, ../scss/app.scss */
+.xwdt li .subtitle {
+  font-size: 0.8em;
+}
+/* line 353, ../scss/app.scss */
+.xwdt li .time {
+  position: absolute;
+  left: 88%;
+  font-size: 0.8em;
+}
+
+/* line 360, ../scss/app.scss */
+.xwdt-small {
+  padding: 0;
+  margin-left: 0;
+  height: 700px;
+  overflow: scroll;
+  margin-top: 20px;
+  list-style: none;
+}
+/* line 361, ../scss/app.scss */
+.xwdt-small ::-webkit-scrollbar {
+  width: 1px;
+}
+/* line 364, ../scss/app.scss */
+.xwdt-small ::-webkit-scrollbar-thumb {
+  width: 1px;
+  background: #c61a25;
+}
+/* line 374, ../scss/app.scss */
+.xwdt-small li {
+  position: relative;
+  background-color: #dddddd;
+  margin-bottom: 10px;
+}
+/* line 378, ../scss/app.scss */
+.xwdt-small li img {
+  padding-left: 20px;
+  width: 30px;
+}
+/* line 383, ../scss/app.scss */
+.xwdt-small li .title {
+  padding-right: 7%;
+}
+/* line 385, ../scss/app.scss */
+.xwdt-small li .title a {
+  font-weight: bold;
+  color: black;
+}
+/* line 391, ../scss/app.scss */
+.xwdt-small li .time {
+  position: absolute;
+  left: 80%;
+  font-size: 0.8em;
+}
+
+/*********xwxq************/
+/* line 404, ../scss/app.scss */
+.article-show img {
+  width: 100%;
+  margin: 15px 0;
+}
+/* line 408, ../scss/app.scss */
+.article-show p {
+  margin-bottom: 0;
+  text-indent: 2em;
+  line-height: 2em;
+}
+/* line 413, ../scss/app.scss */
+.article-show .title-info {
+  display: table;
+  margin: auto;
+  text-align: right;
+  margin-bottom: 20px;
+}
+/* line 418, ../scss/app.scss */
+.article-show .title-info .title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* line 422, ../scss/app.scss */
+.article-show .title-info .info {
+  font-size: 0.8em;
 }

@@ -21,6 +21,9 @@
         <%= yield %>
       </div>
     </div>
+
+
+
     
     <!-- Footer -->
     <%= render 'shared/footer_yellsun' %> 
@@ -29,5 +32,25 @@
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/js/app.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var path_name = window.location.pathname;
+        var $link_word = $('.no-padding a');
+        $link_word.css({opacity: 0.3});
+        switch (<%= @page.id %>) {
+          case 63:
+          $('.no-padding #yxjs').css({opacity: 1});
+          break;
+          case '/pages/yixinlinian':
+          $('.no-padding #yxln').css({opacity: 1});
+          break;
+          case '/pages/yixindingwei':
+          $('.no-padding #yxdw').css({opacity: 1});
+          break;
+        };
+
+      });
+    </script>
   </body>
   </html>

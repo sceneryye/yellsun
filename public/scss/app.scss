@@ -44,6 +44,7 @@ $backgroundgray: #FFF;
 $background_from: rgb(244, 245, 245);
 $background_to: rgb(253, 254, 254);
 $lightgray: rgb(221,221,221);
+$lightred: rgb(249, 204, 205);
 
 
 .short-button {
@@ -157,6 +158,9 @@ $text-color: #fff;
 
 .ul-drop-padding a{margin-left:20px;}
 
+
+
+
 // ************orbit slider***********//
 
 .orbit-timer {
@@ -168,13 +172,17 @@ $text-color: #fff;
   width: 1px;
 }
 
+
+
 /**********secondary pages layouts**********/
+
+
 
 .panel {
   padding-left: 0;
   padding-right: 0;
 }
-.columns {
+.columns-gsgs {
   padding-left: 0;
   padding-right: 0;
 }
@@ -187,9 +195,20 @@ $text-color: #fff;
     margin-right: 0;
   }
   border-bottom: 1px dashed $brightred;
+  padding-bottom: 20px;
   .item {
     padding: 16px 0;
 
+  }
+}
+.article-show {
+  h4 {
+    color: $brightred;
+    padding-top: 20px;
+    background: no-repeat left bottom url(/img/arrow_dashed.png);
+    padding-bottom: 10px;
+    background-size: 100%;
+    
   }
 }
 
@@ -231,38 +250,177 @@ $text-color: #fff;
   .text {
     position: absolute;
     bottom: 0;
-  }.text-2 {
-    right: 0;
-    padding-left: 10px;
+    }.text-2 {
+      right: 0;
+      padding-left: 10px;
+    }
+
   }
 
-}
+  /*****shzr*******/
 
-/*****shzr*******/
-
-.shzr-spaq .text {
-  padding-left: 30px;
-  p {
-    text-indent: 2rem;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5rem;
-  }
-}
-
-.shzr-bzsy {
-  .row {
-    margin: 0;
-  }
-  .text {
+  .shzr-spaq .text {
     padding-left: 30px;
+    p {
+      text-indent: 2rem;
+      margin: 0;
+      padding: 0;
+      line-height: 2rem;
+    }
   }
-}
 
-/***********lxwm***********/
-
-.lxwm {
-  .star {
-    color: $brightred;
+  .shzr-bzsy {
+    .row {
+      margin: 0;
+    }
+    .text {
+      padding-left: 30px;
+    }
   }
-}
+
+  /***********lxwm***********/
+
+  .lxwm {
+    .star {
+      color: $brightred;
+      padding-right: 5px;
+    }
+    
+  }
+  .lxwm-forms {
+    padding: 0 20%;
+  }
+  .lxwm-button {
+
+    color: white;
+    background-color: $brightred;
+    padding: 5px 30px;
+    text-align: center;
+    margin-left: 23%;    
+  }
+  .anytime {
+    color:$brightred;
+    font-style:italic;
+    text-decoration:underline;
+    text-align: center;
+    
+  }
+
+
+  /**********hzgy**********/
+
+  .hzgy-hwys {
+    img {
+      text-align: center;
+    }
+    .text {
+      text-align: left;
+      text-indent: 2rem;
+      margin-top: 20px;
+      p {
+        margin-bottom: 0;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  /**********xwdt************/
+  .xwdt {
+    margin-left: 0;
+    height: 700px;
+    overflow:scroll;
+    margin-top: 20px;
+    list-style: none;
+    li {
+      position: relative;
+      background-color: $lightgray;
+      margin-bottom: 10px;
+      img {
+        padding-left: 20px;
+        
+        width: 30px;
+      }
+      .title {
+        padding-right: 5%;      
+        a {
+          font-weight: bold;
+          color: black;
+        }
+      }
+      .subtitle {
+        font-size: 0.8em;
+      }
+      .time {
+        position: absolute;
+        left: 88%;
+        font-size:0.8em;
+      }
+    }
+  }
+  .xwdt-small {
+    ::-webkit-scrollbar {
+      width: 1px;
+    }
+    ::-webkit-scrollbar-thumb {
+      width: 1px;
+      background: $brightred;
+    }
+    padding: 0;
+    margin-left: 0;
+    height: 700px;
+    overflow:scroll;
+    margin-top: 20px;
+    list-style: none;
+    li {
+      position: relative;
+      background-color: $lightgray;
+      margin-bottom: 10px;
+      img {
+        padding-left: 20px;
+        
+        width: 30px;
+      }
+      .title {
+        padding-right: 7%;      
+        a {
+          font-weight: bold;
+          color: black;
+        }
+      }
+      
+      .time {
+        position: absolute;
+        left: 80%;
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  /*********xwxq************/
+
+  .article-show {
+
+
+    img {
+      width: 100%;
+      margin: 15px 0;
+    }
+    p {
+      margin-bottom: 0;
+      text-indent: 2em;
+      line-height: 2em;
+    }
+    .title-info {
+      display: table;
+      margin: auto;
+      text-align: right;
+      margin-bottom: 20px;
+      .title {        
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      .info {
+        font-size: 0.8em;      
+      }
+    }
+  }
