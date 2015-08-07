@@ -60,6 +60,29 @@ $lightred: rgb(249, 204, 205);
 	color:white
 }
 
+/***********mobile language link**********/
+
+.mobile-langue {
+  .row-border {
+    border: solid 1px rgb(198, 26, 37);
+    border-radius:5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .mobile-langue-div {
+    padding: 0 5%;
+    .langue-link {
+      padding: 0 5%;
+    }
+  }
+  .mobile-langue-div:hover {
+    background-color: $brightred;
+    .langue-link {
+      color: white;
+    }
+  }
+}
+
 
 
 $text-color: #fff;
@@ -69,7 +92,7 @@ $text-color: #fff;
 .footer {
 	margin-top:15px;
 	background-color: $primary-color;
-	padding: 2rem 4rem;
+	padding: 2rem 3rem;
 	text-align: center;
 	color: $text-color;
 	i {
@@ -181,6 +204,7 @@ $text-color: #fff;
 .panel {
   padding-left: 0;
   padding-right: 0;
+
 }
 .columns-gsgs {
   padding-left: 0;
@@ -244,183 +268,210 @@ $text-color: #fff;
     margin-right: 0;  
   }
   .text-picture {
+
     margin-bottom: 20px;
     position: relative;
   }
   .text {
     position: absolute;
     bottom: 0;
-    }.text-2 {
-      right: 0;
-      padding-left: 10px;
-    }
-
+  }
+  .text-2 {
+    right: 0;
+    padding-left: 10px;
   }
 
-  /*****shzr*******/
+}
+@media (max-width: 640px) {
+  .gswh-content {
+    margin-top: 30px;
+  }
+  .text-picture {
 
-  .shzr-spaq .text {
-    padding-left: 30px;
-    p {
-      text-indent: 2rem;
-      margin: 0;
+    h4 {
+      margin-bottom: 5px;
+    }
+    .text {
+      font-size: 0.7em;
+      font-weight: 100;
       padding: 0;
+    }
+  }
+}
+
+/*****shzr*******/
+
+.shzr-spaq .text {
+  padding-left: 30px;
+  p {
+    text-indent: 2rem;
+    margin: 0;
+    padding: 0;
+    line-height: 2rem;
+  }
+}
+
+.shzr-bzsy {
+  img {
+    margin-bottom: 20px;
+  }
+  .row {
+    margin: 0;
+  }
+  .text {
+    padding-left: 30px;
+  }
+  p {
+    margin-bottom: 0;
+    text-indent: 2em;
+    line-height: 2em;
+  }
+}
+
+/***********lxwm***********/
+
+.lxwm {
+  .star {
+    color: $brightred;
+    padding-right: 5px;
+  }
+
+}
+.lxwm-forms {
+  padding: 0 20%;
+}
+.lxwm-button {
+
+  color: white;
+  background-color: $brightred;
+  padding: 5px 30px;
+  text-align: center;
+  margin-left: 23%;    
+}
+.anytime {
+  color:$brightred;
+  font-style:italic;
+  text-decoration:underline;
+  text-align: center;
+
+}
+
+
+/**********hzgy**********/
+
+.hzgy-hwys {
+  img {
+    text-align: center;
+  }
+  .text {
+    text-align: left;
+    text-indent: 2rem;
+    margin-top: 20px;
+    p {
+      margin-bottom: 0;
       line-height: 2rem;
     }
   }
+}
 
-  .shzr-bzsy {
-    .row {
-      margin: 0;
-    }
-    .text {
-      padding-left: 30px;
-    }
-  }
-
-  /***********lxwm***********/
-
-  .lxwm {
-    .star {
-      color: $brightred;
-      padding-right: 5px;
-    }
-    
-  }
-  .lxwm-forms {
-    padding: 0 20%;
-  }
-  .lxwm-button {
-
-    color: white;
-    background-color: $brightred;
-    padding: 5px 30px;
-    text-align: center;
-    margin-left: 23%;    
-  }
-  .anytime {
-    color:$brightred;
-    font-style:italic;
-    text-decoration:underline;
-    text-align: center;
-    
-  }
-
-
-  /**********hzgy**********/
-
-  .hzgy-hwys {
+/**********xwdt************/
+.xwdt {
+  margin-left: 0;
+  height: 700px;
+  overflow:scroll;
+  margin-top: 20px;
+  list-style: none;
+  li {
+    position: relative;
+    background-color: $lightgray;
+    margin-bottom: 10px;
     img {
-      text-align: center;
-    }
-    .text {
-      text-align: left;
-      text-indent: 2rem;
-      margin-top: 20px;
-      p {
-        margin-bottom: 0;
-        line-height: 2rem;
-      }
-    }
-  }
+      padding-left: 20px;
 
-  /**********xwdt************/
-  .xwdt {
-    margin-left: 0;
-    height: 700px;
-    overflow:scroll;
-    margin-top: 20px;
-    list-style: none;
-    li {
-      position: relative;
-      background-color: $lightgray;
-      margin-bottom: 10px;
-      img {
-        padding-left: 20px;
-        
-        width: 30px;
-      }
-      .title {
-        padding-right: 5%;      
-        a {
-          font-weight: bold;
-          color: black;
-        }
-      }
-      .subtitle {
-        font-size: 0.8em;
-      }
-      .time {
-        position: absolute;
-        left: 88%;
-        font-size:0.8em;
-      }
+      width: 30px;
     }
-  }
-  .xwdt-small {
-    ::-webkit-scrollbar {
-      width: 1px;
-    }
-    ::-webkit-scrollbar-thumb {
-      width: 1px;
-      background: $brightred;
-    }
-    padding: 0;
-    margin-left: 0;
-    height: 700px;
-    overflow:scroll;
-    margin-top: 20px;
-    list-style: none;
-    li {
-      position: relative;
-      background-color: $lightgray;
-      margin-bottom: 10px;
-      img {
-        padding-left: 20px;
-        
-        width: 30px;
-      }
-      .title {
-        padding-right: 7%;      
-        a {
-          font-weight: bold;
-          color: black;
-        }
-      }
-      
-      .time {
-        position: absolute;
-        left: 80%;
-        font-size: 0.8em;
-      }
-    }
-  }
-
-  /*********xwxq************/
-
-  .article-show {
-
-
-    img {
-      width: 100%;
-      margin: 15px 0;
-    }
-    p {
-      margin-bottom: 0;
-      text-indent: 2em;
-      line-height: 2em;
-    }
-    .title-info {
-      display: table;
-      margin: auto;
-      text-align: right;
-      margin-bottom: 20px;
-      .title {        
-        font-size: 1.2em;
+    .title {
+      padding-right: 5%;      
+      a {
         font-weight: bold;
-      }
-      .info {
-        font-size: 0.8em;      
+        color: black;
       }
     }
+    .subtitle {
+      font-size: 0.8em;
+    }
+    .time {
+      position: absolute;
+      left: 88%;
+      font-size:0.8em;
+    }
   }
+}
+.xwdt-small {
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 1px;
+    background: $brightred;
+  }
+  padding: 0;
+  margin-left: 0;
+  height: 700px;
+  overflow:scroll;
+  margin-top: 20px;
+  list-style: none;
+  li {
+    position: relative;
+    background-color: $lightgray;
+    margin-bottom: 10px;
+    img {
+      padding-left: 20px;
+
+      width: 30px;
+    }
+    .title {
+      padding-right: 7%;      
+      a {
+        font-weight: 500;
+        color: black;
+        font-size: 0.8em;
+      }
+    }
+
+    .time {
+      position: absolute;
+      left: 80%;
+      font-size: 0.8em;
+    }
+  }
+}
+
+/*********xwxq************/
+
+.article-show {
+
+
+  img {
+    width: 100%;
+    margin: 15px 0;
+  }
+  p {
+    margin-bottom: 0;
+    text-indent: 2em;
+    line-height: 2em;
+  }
+  .title-info {
+    display: table;
+    margin: auto;
+    text-align: right;
+    margin-bottom: 20px;
+    .title {        
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .info {
+      font-size: 0.8em;      
+    }
+  }
+}
