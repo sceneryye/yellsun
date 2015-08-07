@@ -9,14 +9,14 @@
   <link type="text/css" rel="stylesheet" href="/stylesheets/marketing.cssu"/>
   <link href="/stylesheets/foundation-icons.css" rel="stylesheet"></head>
   <body>
-  <%= render 'shared/logo' %>
+    <%= render 'shared/logo' %>
     <!--PC页面菜单-->
     <%= render 'shared/header_yellsun' %>
     
     <div class="row">
-      <div class="columns small-12 panel">
+      <div class="columns small-12 page-background panel">
         
-          <%= render 'shared/gyyx_gsgs' %>
+        <%= render 'shared/gyyx_gsgs' %>
         
         <%= yield %>
       </div>
@@ -29,5 +29,16 @@
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/js/app.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        var $mobile_navbar = $('.mobile-navbar');
+        if ($mobile_navbar.css('display') == 'block') {
+          $('.page-background').removeClass('panel');
+        };
+      });
+    </script>
+    
+    
   </body>
   </html>

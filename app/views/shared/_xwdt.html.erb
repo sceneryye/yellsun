@@ -16,10 +16,10 @@
         <a class="active word" id="xwdt" href="/pages/xinwendongtai">新闻动态</a>
       </li>
       <li class="no-padding">
-        <a class="word" id="zxxx" href="/pages/zuixinxinxi">最新信息</a>
+        <a class="word" id="zxxx" href="#">最新信息</a>
       </li>
       <li class="no-padding">
-        <a class="word" id="cxhd" href="/pages/cuxiaohuodong">促销活动</a>
+        <a class="word" id="cxhd" href="#">促销活动</a>
       </li>
     </ul>
 
@@ -54,10 +54,12 @@
 
 <ul class="columns small-12 show-for-small-only xwdt-small">
   <% 10.times do %>
-  <% @articles.each do |article| %>
+  <% @articles.each_with_index do |article, index| %>
+  <% address = "#" %>
+  <% address = ("/pages/xinwenxiangqing") if index == 1 %>
   <li>
     <img class="red_point" src="/img/red_point2.png">
-    <span class="title"><a href="#"><%= article[0] %></a></span>
+    <span class="title"><a href=<%= address %>><%= article[0] %></a></span>
     
     <span class="time"><%= article[2] %></span>
   </li>
