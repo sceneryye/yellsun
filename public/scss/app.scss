@@ -331,14 +331,27 @@ $text-color: #fff;
 /***********lxwm***********/
 
 .lxwm {
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
   .star {
     color: $brightred;
-    padding-right: 5px;
+    padding: 0;
+  }
+  #appellation-margin {
+    margin-right:5px;
+    @media only screen and (max-width: 40em) {
+      margin-right: 0;
+    } 
   }
 
 }
+
 .lxwm-forms {
-  padding: 0 20%;
+  padding: 0;
 }
 .lxwm-button {
 
@@ -346,15 +359,20 @@ $text-color: #fff;
   background-color: $brightred;
   padding: 5px 30px;
   text-align: center;
-  margin-left: 23%;    
+  margin-left: 23%;
+  border-radius:4px;
+  @media only screen and (max-width: 40em) {
+    margin-left: 0;
+  }    
 }
 .anytime {
   color:$brightred;
   font-style:italic;
   text-decoration:underline;
   text-align: center;
-
+  
 }
+
 
 
 /**********hzgy**********/

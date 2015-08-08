@@ -9734,26 +9734,51 @@ th.hide-for-touch {
 
 /***********lxwm***********/
 /* line 334, ../scss/app.scss */
+.lxwm a {
+  color: white;
+}
+/* line 337, ../scss/app.scss */
+.lxwm a:hover {
+  color: white;
+}
+/* line 340, ../scss/app.scss */
 .lxwm .star {
   color: #c61a25;
-  padding-right: 5px;
+  padding: 0;
+}
+/* line 344, ../scss/app.scss */
+.lxwm #appellation-margin {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 40em) {
+  /* line 344, ../scss/app.scss */
+  .lxwm #appellation-margin {
+    margin-right: 0;
+  }
 }
 
-/* line 340, ../scss/app.scss */
+/* line 353, ../scss/app.scss */
 .lxwm-forms {
-  padding: 0 20%;
+  padding: 0;
 }
 
-/* line 343, ../scss/app.scss */
+/* line 356, ../scss/app.scss */
 .lxwm-button {
   color: white;
   background-color: #c61a25;
   padding: 5px 30px;
   text-align: center;
   margin-left: 23%;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 40em) {
+  /* line 356, ../scss/app.scss */
+  .lxwm-button {
+    margin-left: 0;
+  }
 }
 
-/* line 351, ../scss/app.scss */
+/* line 368, ../scss/app.scss */
 .anytime {
   color: #c61a25;
   font-style: italic;
@@ -9762,24 +9787,24 @@ th.hide-for-touch {
 }
 
 /**********hzgy**********/
-/* line 363, ../scss/app.scss */
+/* line 381, ../scss/app.scss */
 .hzgy-hwys img {
   text-align: center;
 }
-/* line 366, ../scss/app.scss */
+/* line 384, ../scss/app.scss */
 .hzgy-hwys .text {
   text-align: left;
   text-indent: 2rem;
   margin-top: 20px;
 }
-/* line 370, ../scss/app.scss */
+/* line 388, ../scss/app.scss */
 .hzgy-hwys .text p {
   margin-bottom: 0;
   line-height: 2rem;
 }
 
 /**********xwdt************/
-/* line 378, ../scss/app.scss */
+/* line 396, ../scss/app.scss */
 .xwdt {
   margin-left: 0;
   height: 700px;
@@ -9787,38 +9812,38 @@ th.hide-for-touch {
   margin-top: 20px;
   list-style: none;
 }
-/* line 384, ../scss/app.scss */
+/* line 402, ../scss/app.scss */
 .xwdt li {
   position: relative;
   background-color: #dddddd;
   margin-bottom: 10px;
 }
-/* line 388, ../scss/app.scss */
+/* line 406, ../scss/app.scss */
 .xwdt li img {
   padding-left: 20px;
   width: 30px;
 }
-/* line 393, ../scss/app.scss */
+/* line 411, ../scss/app.scss */
 .xwdt li .title {
   padding-right: 5%;
 }
-/* line 395, ../scss/app.scss */
+/* line 413, ../scss/app.scss */
 .xwdt li .title a {
   font-weight: bold;
   color: black;
 }
-/* line 400, ../scss/app.scss */
+/* line 418, ../scss/app.scss */
 .xwdt li .subtitle {
   font-size: 0.8em;
 }
-/* line 403, ../scss/app.scss */
+/* line 421, ../scss/app.scss */
 .xwdt li .time {
   position: absolute;
   left: 88%;
   font-size: 0.8em;
 }
 
-/* line 410, ../scss/app.scss */
+/* line 428, ../scss/app.scss */
 .xwdt-small {
   padding: 0;
   margin-left: 0;
@@ -9827,37 +9852,37 @@ th.hide-for-touch {
   margin-top: 20px;
   list-style: none;
 }
-/* line 411, ../scss/app.scss */
+/* line 429, ../scss/app.scss */
 .xwdt-small ::-webkit-scrollbar {
   width: 1px;
 }
-/* line 414, ../scss/app.scss */
+/* line 432, ../scss/app.scss */
 .xwdt-small ::-webkit-scrollbar-thumb {
   width: 1px;
   background: #c61a25;
 }
-/* line 424, ../scss/app.scss */
+/* line 442, ../scss/app.scss */
 .xwdt-small li {
   position: relative;
   background-color: #dddddd;
   margin-bottom: 10px;
 }
-/* line 428, ../scss/app.scss */
+/* line 446, ../scss/app.scss */
 .xwdt-small li img {
   padding-left: 20px;
   width: 30px;
 }
-/* line 433, ../scss/app.scss */
+/* line 451, ../scss/app.scss */
 .xwdt-small li .title {
   padding-right: 7%;
 }
-/* line 435, ../scss/app.scss */
+/* line 453, ../scss/app.scss */
 .xwdt-small li .title a {
   font-weight: 500;
   color: black;
   font-size: 0.8em;
 }
-/* line 442, ../scss/app.scss */
+/* line 460, ../scss/app.scss */
 .xwdt-small li .time {
   position: absolute;
   left: 80%;
@@ -9865,30 +9890,30 @@ th.hide-for-touch {
 }
 
 /*********xwxq************/
-/* line 455, ../scss/app.scss */
+/* line 473, ../scss/app.scss */
 .article-show img {
   width: 100%;
   margin: 15px 0;
 }
-/* line 459, ../scss/app.scss */
+/* line 477, ../scss/app.scss */
 .article-show p {
   margin-bottom: 0;
   text-indent: 2em;
   line-height: 2em;
 }
-/* line 464, ../scss/app.scss */
+/* line 482, ../scss/app.scss */
 .article-show .title-info {
   display: table;
   margin: auto;
   text-align: right;
   margin-bottom: 20px;
 }
-/* line 469, ../scss/app.scss */
+/* line 487, ../scss/app.scss */
 .article-show .title-info .title {
   font-size: 1.2em;
   font-weight: bold;
 }
-/* line 473, ../scss/app.scss */
+/* line 491, ../scss/app.scss */
 .article-show .title-info .info {
   font-size: 0.8em;
 }
