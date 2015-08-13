@@ -45,9 +45,24 @@ class Admin::UsersController < Admin::BaseController
 		manager.user_id = account.account_id
 		manager.status = 1
 		manager.name = params[:manager][:desc]
+		manager.super = params[:manager][:super]
 		manager.save!
 		redirect_to admin_permissions_path
 	end
+
+	def edit	
+		@manager = Ecstore::Manager.find(params[:id])
+	end
+
+	def update
+		@manager = Ecstore::Manager.find(params[:id])
+		if @manager.update_attributes(params[:manager])
+			redirect_to admin_permissions_path
+		else
+			render :edit
+		end
+	end
+
 
 
 	def send_sms_code
@@ -166,8 +181,8 @@ class Admin::UsersController < Admin::BaseController
 			end.join(",")
 
 			Ecstore::CardLog.create(:member_id=>current_admin.account_id,
-                                                :card_id=>@card.id,
-                                                :message=>"购买: #{log}")
+				:card_id=>@card.id,
+				:message=>"购买: #{log}")
 		end
 
 		render "buy_card"
@@ -198,22 +213,22 @@ class Admin::UsersController < Admin::BaseController
 
 			advance = @user.member_advances.order("log_id asc").last
 			shop_advance = 0
-			 if advance
+			if advance
 				shop_advance = advance.shop_advance
 			else
 				shop_advance = @user.advance
 			end
 			shop_advance += @card.value
 			Ecstore::MemberAdvance.create(:member_id=>@user.member_id,
-											  :money=>@card.value,
-											  :message=>"会员卡激活,卡号:#{@card.no}",
-											  :mtime=>Time.now.to_i,
-											  :memo=>"管理操作",
-											  :import_money=>@card.value,
-											  :explode_money=>0,
-											  :member_advance=>(@user.advance + @card.value),
-											  :shop_advance=>shop_advance,
-											  :disabled=>'false')
+				:money=>@card.value,
+				:message=>"会员卡激活,卡号:#{@card.no}",
+				:mtime=>Time.now.to_i,
+				:memo=>"管理操作",
+				:import_money=>@card.value,
+				:explode_money=>0,
+				:member_advance=>(@user.advance + @card.value),
+				:shop_advance=>shop_advance,
+				:disabled=>'false')
 			@user.update_attribute :advance, @card.value + @user.advance
 			@card.update_attribute :use_status, true
 			@card.update_attribute :used_at, Time.now
@@ -231,8 +246,8 @@ class Admin::UsersController < Admin::BaseController
 			end.join(",")
 
 			Ecstore::CardLog.create(:member_id=>current_admin.account_id,
-			                                         :card_id=>@card.id,
-			                                         :message=>"充值: #{log}, 金额=#{@card.value}")
+				:card_id=>@card.id,
+				:message=>"充值: #{log}, 金额=#{@card.value}")
 		end
 
 		render "use_card"

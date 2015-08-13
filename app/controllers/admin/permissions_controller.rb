@@ -8,7 +8,7 @@ class Admin::PermissionsController < Admin::BaseController
   end
 
   def update
-   
+
     manager_id = params[:id]
 
     @permission = Imodec::Permission.where(:manager_id=>manager_id).first
@@ -25,4 +25,20 @@ class Admin::PermissionsController < Admin::BaseController
     @manager = Ecstore::Manager.find(params[:id])
     @resources = Imodec::Resource.where(:parent_id=>nil)
   end
+
+  def destroy
+    @manager = Ecstore::Manager.find(params[:id])
+    @manager.account.user.destroy
+    @manager.account.destroy
+    @manager.destroy
+    redirect_to admin_permissions_path
+  end
+
+  def role
+    @managers = Ecstore::Manager.all
+    @manager = Ecstore::Manager.find(params[:id])
+    @method = :put
+  end
+
+ 
 end

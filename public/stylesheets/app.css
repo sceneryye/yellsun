@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 364, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.2/";
@@ -9832,18 +9833,18 @@ th.hide-for-touch {
   font-weight: bold;
   color: black;
 }
-/* line 418, ../scss/app.scss */
+/* line 419, ../scss/app.scss */
 .xwdt li .subtitle {
   font-size: 0.8em;
 }
-/* line 421, ../scss/app.scss */
+/* line 422, ../scss/app.scss */
 .xwdt li .time {
   position: absolute;
   left: 88%;
   font-size: 0.8em;
 }
 
-/* line 428, ../scss/app.scss */
+/* line 429, ../scss/app.scss */
 .xwdt-small {
   padding: 0;
   margin-left: 0;
@@ -9852,37 +9853,37 @@ th.hide-for-touch {
   margin-top: 20px;
   list-style: none;
 }
-/* line 429, ../scss/app.scss */
+/* line 430, ../scss/app.scss */
 .xwdt-small ::-webkit-scrollbar {
   width: 1px;
 }
-/* line 432, ../scss/app.scss */
+/* line 433, ../scss/app.scss */
 .xwdt-small ::-webkit-scrollbar-thumb {
   width: 1px;
   background: #c61a25;
 }
-/* line 442, ../scss/app.scss */
+/* line 443, ../scss/app.scss */
 .xwdt-small li {
   position: relative;
   background-color: #dddddd;
   margin-bottom: 10px;
 }
-/* line 446, ../scss/app.scss */
+/* line 447, ../scss/app.scss */
 .xwdt-small li img {
   padding-left: 20px;
   width: 30px;
 }
-/* line 451, ../scss/app.scss */
+/* line 452, ../scss/app.scss */
 .xwdt-small li .title {
   padding-right: 7%;
 }
-/* line 453, ../scss/app.scss */
+/* line 454, ../scss/app.scss */
 .xwdt-small li .title a {
   font-weight: 500;
   color: black;
   font-size: 0.8em;
 }
-/* line 460, ../scss/app.scss */
+/* line 461, ../scss/app.scss */
 .xwdt-small li .time {
   position: absolute;
   left: 80%;
@@ -9890,30 +9891,58 @@ th.hide-for-touch {
 }
 
 /*********xwxq************/
-/* line 473, ../scss/app.scss */
+/* line 474, ../scss/app.scss */
 .article-show img {
   width: 100%;
   margin: 15px 0;
 }
-/* line 477, ../scss/app.scss */
+/* line 478, ../scss/app.scss */
 .article-show p {
   margin-bottom: 0;
   text-indent: 2em;
   line-height: 2em;
 }
-/* line 482, ../scss/app.scss */
+/* line 483, ../scss/app.scss */
 .article-show .title-info {
   display: table;
   margin: auto;
   text-align: right;
   margin-bottom: 20px;
 }
-/* line 487, ../scss/app.scss */
+/* line 488, ../scss/app.scss */
 .article-show .title-info .title {
   font-size: 1.2em;
   font-weight: bold;
 }
-/* line 491, ../scss/app.scss */
+/* line 492, ../scss/app.scss */
 .article-show .title-info .info {
   font-size: 0.8em;
+}
+
+/**********诚聘英才************/
+/* line 501, ../scss/app.scss */
+.cpyc ol {
+  list-style-type: none;
+  counter-reset: sectioncounter;
+}
+/* line 505, ../scss/app.scss */
+.cpyc ol li:before {
+  content: counter(sectioncounter) ") ";
+  counter-increment: sectioncounter;
+}
+/* line 509, ../scss/app.scss */
+.cpyc form {
+  height: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+/* line 514, ../scss/app.scss */
+.cpyc input {
+  display: inline-block;
+  width: 60%;
+}
+/* line 518, ../scss/app.scss */
+.cpyc textarea {
+  display: inline-block;
+  width: 60%;
 }

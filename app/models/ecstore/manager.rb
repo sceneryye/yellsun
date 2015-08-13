@@ -1,6 +1,7 @@
+  #coding: utf-8  
 class Ecstore::Manager < Ecstore::Base
 	self.table_name = "sdb_desktop_users"
-  attr_accessible :user_id, :status, :name
+  attr_accessible :user_id, :status, :name, :super
 
   belongs_to :user,:foreign_key=>"user_id"
 	has_one :account,:foreign_key=>"account_id"
@@ -16,7 +17,7 @@ class Ecstore::Manager < Ecstore::Base
 	def has_right_of(controller=nil,action=nil)
 		return true if self.super=="1"
 		return false unless self.permission
-		rights = ActiveSupport::JSON.decode(self.permission.rights)
+		rights = ActiveSupport::JSON.decode(self.permission.rights)		
 
 		if action.nil?
 			return rights[controller.to_s]&&rights[controller.to_s].select{|k,v| v == "1"}.size > 0
@@ -34,5 +35,16 @@ class Ecstore::Manager < Ecstore::Base
 			end
 		end
 	end
+
+	def role_name
+    case self.super
+    when '0'
+      '超级管理员'
+    when '2'
+      '审核员'
+    when '3'
+      '文章发布员'
+    end
+  end
 
 end

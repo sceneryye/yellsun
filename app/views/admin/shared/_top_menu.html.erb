@@ -208,12 +208,14 @@
             <li class="<%='active' if controller_name=='payment_logs'%>">
               <%=link_to "支付日志",admin_payment_logs_path%>
             </li>
-
-            <li class="<%='active' if controller_name=='permissions'%>">
-              <%=link_to "权限管理",admin_permissions_path%>
-            </li>
-
             <%end%>
+
+            <% if current_admin %>
+            <li class="<%='active' if controller_name=='permissions'%>">
+              <%=link_to "系统管理",admin_permissions_path%>
+            </li>
+            <% end %>
+
             <%if current_admin.has_right_of("vshop","index")%>
             <li class="<%='active' if controller_name=='vshop'%>">
               <a href="#">微店管理</a>

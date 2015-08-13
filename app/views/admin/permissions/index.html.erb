@@ -1,21 +1,32 @@
-<%=link_to "新建用户",new_admin_permission_path%>
+<%=link_to "新建管理员",new_admin_permission_path%>
+<% unless current_admin.super? %>
+	<% @managers = @managers[1, @managers.length - 1] %>
+	<% end %>
 <table class="table table-bordered">
 	<thead>
-	<tr>
-		<th>姓名</th>
-		<th>用户名</th>
-		<th>超级管理员</th>
-		<th>启用</th>
-		<th>操作</th>
-	</tr>
+		<tr>
+			<th>角色</th>
+			<th>用户名</th>
+			<th>超级管理员</th>
+			<th>启用</th>
+			<th>操作</th>
+		</tr>
 	</thead>
-	<%@managers.each do |manager|%>
+	<%@managers.each do |manager|%>	
 	<tr>
-		<td><%=manager.name%></td>
+		<td><%=manager.role_name%></td>
 		<td><%=manager.account.login_name%></td>
-		<td><%=manager.super=="1" ? "是" : "否"%></td>
+		<td><%= (['0', '1'].include? manager.super) ? "是" : "否"%></td>
 		<td><%=manager.status=="1" ? "是" : "否"%></td>
-		<td><%=link_to "编辑",edit_admin_permission_path(manager)%></td>
+		<td>
+		<% next if manager == current_admin.manager %>
+		<span><%=link_to "权限管理",edit_admin_permission_path(manager) if ['0', '1'].include? current_admin.manager.super %></span>
+		<span><%=link_to "角色管理",admin_permission_role_path(manager) if ['0', '1'].include? current_admin.manager.super %></span>
+		<span><%=link_to "删除",admin_permission_path(manager), method: :delete if ['0', '1'].include? current_admin.manager.super %></span>
+		</td>
 	</tr>
 	<%end%>
 </table>
+
+
+
